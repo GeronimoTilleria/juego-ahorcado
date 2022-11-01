@@ -112,5 +112,5 @@ h1 {
 #ahorcado {
     height: 212px;
     width: 200px;
-    background-image: url('images/ahorcado_1024x212.webp');
+    background-image: url('./ahorcado_1024x212.webp');
 }
