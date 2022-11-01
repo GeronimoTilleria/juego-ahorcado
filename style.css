@@ -1,0 +1,116 @@
+:root {
+    --fondoPantalla: #B2BABB;
+    --colorTitulo: ;
+
+    --fuenteTexto: 'Ubuntu', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--fondoPantalla);
+    font-family: var(--fuenteTexto);
+    font-size: 1.6rem;
+}
+
+p {
+    text-align: center;
+    color: #dde8ea;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#contenedor {
+    max-width: 70rem;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #2E86C1;
+    box-shadow: 0px 0px 49px -7px rgba(0,0,0,0.75);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contenedor-informacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contenedor-interaccion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+#letra {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 auto;
+}
+
+#calcular {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+}
+
+#calcular:hover {
+    background-color: brown;
+}
+
+#output {
+    font-size: 3rem;
+}
+
+#contenedor-mensaje-limite {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#error-limite {
+    text-align: start;
+}
+
+#victoria {
+    display: none;
+}
+
+#perdido {
+    display: none;
+}
+
+#ahorcado {
+    height: 212px;
+    width: 200px;
+    background-image: url('./ahorcado_1024x212.webp');
+}
